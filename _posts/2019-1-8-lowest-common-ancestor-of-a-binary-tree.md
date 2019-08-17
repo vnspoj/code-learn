@@ -13,7 +13,7 @@ According to the definition of LCA on Wikipedia: *“The lowest common ancestor 
 
 Given the following binary tree: `root = [3,5,1,6,2,0,8,null,null,7,4]`
 
-<img src="/top-interview-questions/static/img/posts/lowest-common-ancestor-of-a-binary-tree.png" width="200px">
+<img src="/code-learn/static/img/posts/lowest-common-ancestor-of-a-binary-tree.png" width="200px">
 
 Example 1:
 ```

@@ -28,22 +28,14 @@ layout: default
 <div class="content">
   <h2>Problem:</h2>
   <h4>
-    <a href="//leetcode.com/problems/{{ page.code }}" target="_blank">
-      https://leetcode.com/problems/{{ page.code }}
+    <a href="//codelearn.io/Training/Detail?Id={{ page.code }}" target="_blank">
+      {{ page.name }} (https://codelearn.io/Training/Detail?Id={{ page.code }})
     </a>
   </h4>
 
   <div class="post">
     {{ content }}
   </div>
-
-  <br>
-  <h2>Solution:</h2>
-  <h4>
-    <a href="//leetcode.com/problems/{{ page.code }}/solution" target="_blank">
-      https://leetcode.com/problems/{{ page.code }}/solution
-    </a>
-  </h4>
 
 <!-- vnspoj.github.io_ads_post_upper_source -->
 <div style="margin-top: 50px; margin-bottom: 50px">
@@ -74,10 +66,10 @@ layout: default
             <i class="fa fa-eye"></i>
           </button>
           {% endif %}
-          <a href="//github.com/vnspoj/go-solution/blob/master/{{ src }}/{{ page.code }}.{{ src }}" class="btn-tool" target="_blank">
+          <a href="//github.com/vnspoj/codelearnsolution/blob/master/{{ src }}/{{ page.code }}.{{ src }}" class="btn-tool" target="_blank">
             <button class="btn btn-warning">View on Github <i class="fa fa-github"></i></button>
           </a>
-          <a download href="/go-solution/{{ src }}/{{ page.code }}.{{ src }}" class="btn-tool">
+          <a download href="/codelearnsolution/{{ src }}/{{ page.code }}.{{ src }}" class="btn-tool">
             <button class="btn btn-primary">Download <i class="fa fa-download"></i></button>
           </a>
         </div>

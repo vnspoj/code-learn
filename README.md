@@ -1,8 +1,8 @@
-## Top Interview Questions
+## Hướng dẫn giải một số bài trên Code Learn
 
-Solution for Top Interview Questions on [leetcode](https://leetcode.com/problemset/top-interview-questions)
+Hướng dẫn giải một số bài trên [Code Learn](https://codelearn.io/Training/)
 
-View blog here https://vnspoj.github.io/top-interview-questions
+View blog here https://vnspoj.github.io/code-learn
 
 Favicon
 

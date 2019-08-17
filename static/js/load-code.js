@@ -13,7 +13,7 @@
     const lang = $src.children('.js-filename-code').attr('value');
     const code = $src.children('.js-filename-code').attr('data-code');
 
-    $.get(`https://vnspoj.github.io/go-solution/${lang}/${code}.${lang}`, (code) => {
+    $.get(`https://vnspoj.github.io/codelearnsolution/${lang}/${code}.${lang}`, (code) => {
       const highlightCode = Prism.highlight(code, Prism.languages[lang]);
       $src.find('.js-source-code')
         .addClass(`language-${lang}`)
