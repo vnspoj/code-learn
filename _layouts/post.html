@@ -27,11 +27,14 @@ layout: default
 
 <div class="content">
   <h2>Problem</h2>
+
   <h4>
     <a href="//codelearn.io/Training/Detail?Id={{ page.code }}" target="_blank">
       {{ page.title }} (Id: {{ page.code }})
     </a>
   </h4>
+
+  <h2>Tutorial</h2>
 
   <div class="post">
     {{ content }}
@@ -55,7 +58,7 @@ layout: default
       <div class="js-single-src single-src">
         <div class="js-filename-code filename-code" value="{{ src }}" data-code="{{ page.code }}">{{ src }}/{{ page.code }}.{{ src }}</div>
         <div class="btn-toolbar-code">
-          {% if src == "go" %}
+          {% if src == "cpp" %}
           <button class="js-toggle-code btn btn-success" data-visible="1">
             <span class="text">Hide</span>
             <i class="fa fa-eye-slash"></i>
