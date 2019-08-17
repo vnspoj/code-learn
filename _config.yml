@@ -1,0 +1,56 @@
+title: Top Interview Questions
+description: Solution for Top Interview Questions on leetcode, mainly use Golang, and also use Python, JavaScript, CPP and Java
+author: "Go Solution"
+github: //github.com/vnspoj/top-interview-questions
+about: Solution for Top Interview Questions on leetcode, mainly use Golang, and also use Python, JavaScript, CPP and Java
+disqus_shortname: vnspoj
+# google_analytics: UA-XXXXXXXX-Y
+avatar_url: /static/img/favicon.png
+email: tutorialspoj@gmail.com
+
+username: vnspoj
+repo: top-interview-questions
+org: //github.com/vnspoj
+
+social:
+    - icon: fa-stack-overflow
+      link: "//stackoverflow.com/users/8828489/huynhsamha"
+    - icon: fa-github
+      link: "//github.com/vnspoj"
+    - icon: fa-twitter
+      link: "//twitter.com/huynhsamha"
+    - icon: fa-linkedin
+      link: "//www.linkedin.com/in/huynhsamha"
+
+share:
+  twitter_username: huynhsamha
+  # fb_appid: 1749788565247320
+
+urls:
+    - text: About Us
+      url: /about
+    - text: Related Topics
+      url: /category
+    - text: XML Feed
+      url: /feed.xml
+    # - text: Join with us
+    #   url: //github.com/vnspoj
+
+url: "//vnspoj.github.io"
+baseurl: "/top-interview-questions"
+paginate: 50
+per_page: 50
+paginate_path: "/page/:num/"
+markdown: kramdown
+# mathjax: true
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+
+sass:
+  style: compressed

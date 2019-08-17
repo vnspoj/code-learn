@@ -1,0 +1,67 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-5 col-md-5 intro">
+        <div class="top js-reveal">
+          <img src="{{ site.baseurl }}{{ site.avatar_url }}" alt="Leetcode Avatar">
+          <h1>Go Solution</h1>
+        </div>
+        <div class="down js-reveal">
+          Solution for
+          <a href="//leetcode.com/problemset/top-interview-questions">Top Interview Questions on Leetcode</a>
+          , mainly use Golang, and also use Python, JavaScript, CPP and Java
+        </div>
+      </div>
+      <div class="col-12 col-lg-3 col-md-3">
+        <h3 class="js-reveal">Navigation</h3>
+        <div class="navigation">
+          <div class="link js-reveal">
+            <a href="{{ site.baseurl }}/">Home</a>
+          </div>
+          {% for i in site.urls %}
+            <div class="link js-reveal">
+              <a href="{{ site.baseurl }}{{ i.url }}">{{ i.text }}</a>
+            </div>
+          {% endfor %}
+        </div>
+        <h3 style="margin: 25px 0px 20px" class="js-reveal">Community</h3>
+        <div class="btn-github js-reveal">
+          <iframe src="//ghbtns.com/github-btn.html?user={{ site.username }}&repo={{ site.repo }}&type=star&count=true" frameborder="0" scrolling="0" width="85" height="20px"></iframe>
+          <iframe src="//ghbtns.com/github-btn.html?user={{ site.username }}&repo={{ site.repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="85" height="20px"></iframe>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-md-4">
+        <h3 class="js-reveal">Contact Us</h3>
+        <div class="external-links js-reveal">
+          <span><i class="fa fa-envelope"></i></span> &ThickSpace;
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <div class="external-links js-reveal">
+          <span><i class="fa fa-globe"></i></span> &ThickSpace;
+          <a href="{{ site.url }}">https:{{ site.url }}</a>
+        </div>
+        <div class="external-links js-reveal">
+          <span><i class="fa fa-github"></i></span> &ThickSpace;
+          <a href="{{ site.org }}">https:{{ site.org }}</a>
+        </div>
+        <br>
+        <h3 class="js-reveal">Follow Us</h3>
+        <div class="social-links">
+          {% for link in site.social %}
+            <a href="{{ link.link }}" target="_blank" class="js-reveal">
+              <span><i class="fa {{ link.icon }}"></i></span>
+            </a>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="end text-center">
+    <span class="js-reveal">
+      Made with <i class="fa fa-heart" style="color: #eb0025"></i> by
+      <a href="//github.com/huynhsamha">huynhsamha</a>.
+    </span>
+    <span class="js-reveal">All rights reserved.</span>
+  </div>
+</footer>
