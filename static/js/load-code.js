@@ -34,7 +34,7 @@
       }
     });
 
-    if (lang != 'go') {
+    if (lang != 'cpp') {
       // not golang -> hide source code
       $src.children('.js-area-code').slideUp()
     }
