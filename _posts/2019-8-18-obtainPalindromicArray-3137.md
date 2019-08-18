@@ -18,4 +18,6 @@ Ngoài ra nếu như cặp `(l,r)` không thể hình thành palindrome thì ta 
 
 Do đó ta có thể brute force cho bài này, duyệt theo chiều sâu tốt hơn là chiều rộng, vì khi đã hoàn tất thì có thể trả về ngay kết quả. Chiều dài mỗi chuỗi là nhỏ nên không đáng kể.
 
-Cần xử lý xâu cẩn thận để accept.
+Khi duyệt, ta cần lưu lại trạng thái đã sử dụng trên mỗi chuỗi `l,r`, do đó lưu lại trạng thái nhận/dịch của mỗi chuỗi, từ đó hình thành lại 2 chuỗi này, sau đó duyệt đến các trạng thái tiếp theo.
+
+Cần xử lý xâu cẩn thận để accept. Có thể khử đệ quy bằng stack.
