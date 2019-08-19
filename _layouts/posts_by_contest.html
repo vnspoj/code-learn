@@ -13,19 +13,6 @@ layout: default
 
 <div class="post-content">
   <hr />
-  {% for contestId in site.contestId %}
-    {% capture contestId_slug %}{{ contestId | first }}{% endcapture %}
-    {% for c_slug in contestId_slug %}
-      {% if c_slug == page.contestId %}
-        <button class="btn btn-sm btn-default active">{{ c_slug }}</button>
-      {% else %}
-        <a href="{{ site.baseurl }}/contests/{{ c_slug }}" class="btn btn-sm btn-default">{{ c_slug }}</a>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-
-  <hr />
-
   {% if page.contestId %}
   <!-- Specific category -->
   <h3>{{ page.title }}</h3>
@@ -71,11 +58,24 @@ layout: default
   {% else %}
     <p>There are no posts in this contest.</p>
   {% endif %}
+  <hr />
   <!-- End Specific category -->
   {% else %}
   <!-- Index page -->
 
   {% endif %}
+
+  <!-- Danh sách contests -->
+  {% for contestId in site.contestId %}
+    {% capture contestId_slug %}{{ contestId | first }}{% endcapture %}
+    {% for c_slug in contestId_slug %}
+      {% if c_slug == page.contestId %}
+        <button class="btn btn-sm btn-default active">{{ c_slug }}</button>
+      {% else %}
+        <a href="{{ site.baseurl }}/contests/{{ c_slug }}" class="btn btn-sm btn-default">{{ c_slug }}</a>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
 </div>
 
 <!-- vnspoj.github.io_ads_post_upper_related -->
