@@ -5,6 +5,7 @@ categories: [binary-index-tree]
 code: 86094
 src: [cpp]
 difficulty: medium
+contestId: 120342
 ---
 
 Dạng bài kiểm tra xem có cách nào khôi phục trạng thái ban đầu từ một số cách biến đổi. Một cách hay xử lý là tìm ra 1 tính chất bất biến của chuỗi sau các phép biên đổi.

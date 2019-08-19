@@ -31,6 +31,8 @@ urls:
       url: /about
     - text: Related Topics
       url: /category
+    - text: Contests
+      url: /contests
     - text: XML Feed
       url: /feed.xml
     # - text: Join with us
