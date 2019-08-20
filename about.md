@@ -2,6 +2,7 @@
 layout: page
 title: About Us
 permalink: /about
+ads: 0
 ---
 
 Hướng dẫn giải một số bài trên [Code Learn](https://codelearn.io/Training/).

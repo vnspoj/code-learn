@@ -26,16 +26,24 @@ layout: default
 {% endif %}
 
 <div class="content">
-  <h2>Problem</h2>
-
+  <h2 style="margin-bottom: 15px">Problem</h2>
   <h4>
+    <i>Chi tiết bài:</i>
     <a href="//codelearn.io/Training/Detail?Id={{ page.code }}" target="_blank">
       {{ page.title }} (Id: {{ page.code }})
     </a>
   </h4>
+  {% for contest in site.contests %}
+  {% if contest.contestId and contest.contestId == page.contestId %}
+    <h4 style="margin-top: 15px">
+      <i>Xem các bài khác trong contest: </i>
+      <a href="{{ site.baseurl }}{{ contest.url }}">{{ contest.title }}</a>
+    </h4>
+  {% endif %}
+  {% endfor %}
+  <hr />
 
-  <h2>Tutorial</h2>
-
+  <h2 style="margin-bottom: 15px">Tutorial</h2>
   <div class="post">
     {{ content }}
   </div>

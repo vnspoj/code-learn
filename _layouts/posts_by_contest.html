@@ -15,49 +15,40 @@ layout: default
   <hr />
   {% if page.contestId %}
   <!-- Specific category -->
-  <h3>{{ page.title }}</h3>
+  <h4><i>Chi tiết của contest:</i> <a target="_blank" href="https://codelearn.io/Fights/Detail/{{ page.contestId }}">https://codelearn.io/Fights/Detail/{{ page.contestId }}</a></h4>
+  Đánh giá cá nhân:
+  {% for i in (1..page.rating) %}
+  <i class="fa fa-star" style="color: rgb(255, 0, 0)"></i>
+  {% endfor %}
+  {% assign nr = 5 | minus: page.rating %}
+  {% for i in (1..nr) %}
+  <i class="fa fa-star-o"></i>
+  {% endfor %}
   <hr />
-  {% if site.contestId[page.contestId] %}
-    {% for post in site.contestId[page.contestId] %}
-      {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% if forloop.first %}
-          <h4>{{ post_year }}</h4>
-          <div class="list-group">
-      {% endif %}
 
-      {% if forloop.first == false %}
-        {% assign previous_index = forloop.index0 | minus: 1 %}
-        {% capture previous_post_year %}{{ site.contestId[page.contestId][previous_index].date | date: '%Y' }}{% endcapture %}
-        {% if post_year != previous_post_year %}
-          </div>
-          <h4>{{ post_year }}</h4>
-          <div class="list-group">
-        {% endif %}
-      {% endif %}
-        <ul class="posts">
-          <li>
-            {% if post.difficulty == "easy" %}
-            <span class="label label-success custom-badge">
-            {% elsif post.difficulty == "medium" %}
-            <span class="label label-warning custom-badge">
-            {% elsif post.difficulty == "hard" %}
-            <span class="label label-danger custom-badge">
-            {% endif %}
-              {{ post.difficulty }}
-            </span>
-            &nbsp;
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            &nbsp;
-            &raquo; <i><span>{{ post.date | date_to_string }}</span></i>
-          </li>
-        </ul>
-      {% if forloop.last %}
-        </div>
+  <p>Lời giải cho các bài trong contest:</p>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      {% if post.contestId == page.contestId %}
+        <li>
+          {% if post.difficulty == "easy" %}
+          <span class="label label-success custom-badge">
+          {% elsif post.difficulty == "medium" %}
+          <span class="label label-warning custom-badge">
+          {% elsif post.difficulty == "hard" %}
+          <span class="label label-danger custom-badge">
+          {% endif %}
+            {{ post.difficulty }}
+          </span>
+          &nbsp;
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          &nbsp;
+          &raquo; <i><span>{{ post.date | date_to_string }}</span></i>
+        </li>
       {% endif %}
     {% endfor %}
-  {% else %}
-    <p>There are no posts in this contest.</p>
-  {% endif %}
+  </ul>
   <hr />
   <!-- End Specific category -->
   {% else %}
@@ -66,16 +57,28 @@ layout: default
   {% endif %}
 
   <!-- Danh sách contests -->
-  {% for contestId in site.contestId %}
-    {% capture contestId_slug %}{{ contestId | first }}{% endcapture %}
-    {% for c_slug in contestId_slug %}
-      {% if c_slug == page.contestId %}
-        <button class="btn btn-sm btn-default active">{{ c_slug }}</button>
-      {% else %}
-        <a href="{{ site.baseurl }}/contests/{{ c_slug }}" class="btn btn-sm btn-default">{{ c_slug }}</a>
-      {% endif %}
-    {% endfor %}
+  <div style="font-size: 20px; margin-top: 25px">
+  <h2>Danh sách các contests</h2>
+  <br/>
+  {% for contest in site.contests %}
+    {% if contest.contestId %}
+      <div>
+        &raquo;
+        &nbsp;
+          {% for i in (1..contest.rating) %}
+          <i class="fa fa-star" style="color: rgb(255, 0, 0)"></i>
+          {% endfor %}
+          {% assign nr = 5 | minus: contest.rating %}
+          {% for i in (1..nr) %}
+          <i class="fa fa-star-o"></i>
+          {% endfor %}
+        &nbsp;
+          <a href="{{ site.baseurl }}{{ contest.url }}">{{ contest.title }}</a>
+        &nbsp;
+      </div>
+    {% endif %}
   {% endfor %}
+  </div>
 </div>
 
 <!-- vnspoj.github.io_ads_post_upper_related -->

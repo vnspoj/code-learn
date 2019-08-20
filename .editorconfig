@@ -24,9 +24,14 @@ space_after_anonymous_functions = true
 spaces_in_brackets = false
 
 # No Standard.  Please document a standard if different from .js
-[**.{yml,css,scss}]
+[**.{css,scss}]
 trim_trailing_whitespace = true
 indent_style = tab
+indent_size = 2
+
+[**.yml]
+trim_trailing_whitespace = true
+indent_style = space
 indent_size = 2
 
 [**.html]

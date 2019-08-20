@@ -35,13 +35,15 @@ urls:
       url: /contests
     - text: XML Feed
       url: /feed.xml
-    # - text: Join with us
-    #   url: //github.com/vnspoj
+
+collections:
+    contests:
+      output: true
 
 url: "//vnspoj.github.io"
 baseurl: "/code-learn"
-paginate: 50
-per_page: 50
+paginate: 20
+per_page: 20
 paginate_path: "/page/:num/"
 markdown: kramdown
 # mathjax: true
