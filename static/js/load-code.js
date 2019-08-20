@@ -14,10 +14,9 @@
     const code = $src.children('.js-filename-code').attr('data-code');
 
     $.get(`https://vnspoj.github.io/codelearn-solution/${lang}/${code}.${lang}`, (code) => {
-      const highlightCode = Prism.highlight(code, Prism.languages[lang]);
       let slang = lang;
       if (slang == 'cs') slang = 'cpp';
-
+      const highlightCode = Prism.highlight(code, Prism.languages[slang]);
       $src.find('.js-source-code')
         .addClass(`language-${slang}`)
         .html(highlightCode);
