@@ -14,7 +14,9 @@ Nhận thấy số đỉnh là `n <= 10` ở mỗi phía, số cạnh của đ�
 
 Từ yêu cầu bài toán, ta cần chọn ra `n/2` cặp đỉnh có hướng từ `A->B` và `n/2` cặp đỉnh có hướng từ `B->A` với các đỉnh không lặp lại trong các cạnh được chọn.
 
-<img src="/code-learn/static/img/posts/layover.jpg" width="90%" />
+<p align="center">
+<img src="/code-learn/static/img/posts/layover.jpg" width="60%"/>
+</p>
 
 Trước hết sinh tổ hợp `n/2` đỉnh được chọn trong đồ thị phía A, tất cả có `C(5,10) ~ 250` bộ (tổ hợp chập 5 của 10), nhân phân phối với `250` cách chọn của `n/2` đỉnh chọn ra từ phía B, ta được khoảng `65000` cách chọn `n/2` cạnh có hướng từ `A->B`.
 
