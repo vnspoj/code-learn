@@ -1,6 +1,6 @@
 ---
 layout: posts_by_category
 categories: trie
-title: Trie
+title: Trie (Cây tiền tố)
 permalink: /category/trie
 ---

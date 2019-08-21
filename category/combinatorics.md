@@ -1,6 +1,6 @@
 ---
 layout: posts_by_category
 categories: combinatorics
-title: Combinatorics
+title: Combinatorics (Tổ hợp)
 permalink: /category/combinatorics
 ---

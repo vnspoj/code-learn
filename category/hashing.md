@@ -1,6 +1,6 @@
 ---
 layout: posts_by_category
 categories: hashing
-title: Hashing
+title: Hashing (Kỹ thuật băm)
 permalink: /category/hashing
 ---
