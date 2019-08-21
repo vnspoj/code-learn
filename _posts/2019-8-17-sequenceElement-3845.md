@@ -13,7 +13,7 @@ Cách làm chính là dùng nhân ma trận với cách tính luỹ thừa trong
 
 Biểu diễn ma trận như hình dưới đây:
 
-```s
+```js
 /  a[i-1]  \    / 1 , 1 , 1 , 1 , 1 \     /   a[i]   \
 |  a[i-2]  |    | 1 , 0 , 0 , 0 , 0 |     |  a[i-1]  |
 |  a[i-3]  |  * | 0 , 1 , 0 , 0 , 0 |  =  |  a[i-2]  |  = F(i)
@@ -27,7 +27,7 @@ Dễ thấy `F[i] = F[i-1] * P` với `P` là ma trận `5x5` như trên.
 
 Khởi tạo có
 
-```s
+```js
 /  a[4]  \  
 |  a[3]  |  
 |  a[2]  |  = F(4)

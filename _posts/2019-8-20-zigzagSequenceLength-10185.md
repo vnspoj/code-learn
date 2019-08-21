@@ -12,7 +12,7 @@ Bài quy hoạch động khá đơn giản, gọi `f[i][0]` là chiều dài dã
 
 Tại vị trí `i`:
 
-```s
+```js
 Nếu a[i] == a[i-1]:
 	f[i][0] = f[i][1] = 1
 
