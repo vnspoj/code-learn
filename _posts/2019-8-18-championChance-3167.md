@@ -4,7 +4,8 @@ title:  "championChance"
 categories: [greedy, brute-force]
 code: 3167
 src: [cpp]
-difficulty: medium
+difficulty: hard
+ads_more: 1
 ---
 
 Thử với mỗi team `i`, thực hiện tham lam xem sau cùng có thể cho `i` thắng không.
