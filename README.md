@@ -4,6 +4,8 @@ Hướng dẫn giải một số bài trên [Code Learn](https://codelearn.io/Tr
 
 View blog here https://vnspoj.github.io/code-learn
 
-Favicon
+<p align="center">
+<img src="./static/img/favicon.png" width="180px">
+</p>
 
-<img align="center" src="./static/img/favicon.png" width="250px">
+
