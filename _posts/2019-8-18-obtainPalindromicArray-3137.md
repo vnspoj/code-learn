@@ -5,6 +5,7 @@ categories: [string, brute-force, dfs, stack]
 code: 3137
 src: [cpp]
 difficulty: hard
+ads_more: 1
 ---
 
 Nhận xét ta có thể check từ ngoài vào trong trên palindrome, tức xét lần lượt các cặp `(0,n-1)`, `(1,n-2)` với `n`là chiều dài mảng.
