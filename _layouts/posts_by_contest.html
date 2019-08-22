@@ -74,6 +74,7 @@ layout: default
           {% endfor %}
         &nbsp;
           <a href="{{ site.baseurl }}{{ contest.url }}">{{ contest.title }}</a>
+          &raquo; <i><span style="font-size: 16px">{{ contest.date | date_to_string }}</span></i>
         &nbsp;
       </div>
     {% endif %}

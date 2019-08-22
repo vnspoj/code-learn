@@ -1,0 +1,68 @@
+---
+layout: default
+---
+<header class="post-header">
+  <h1 class="post-title">
+    {% if page.difficulty %}
+      Phân loại: {{ page.title }}
+    {% else %}
+      {{ page.title }}
+    {% endif %}
+  </h1>
+</header>
+
+<div class="post-content">
+  <hr />
+
+  <!-- Danh sách loại khó -->
+  <div style="font-size: 20px; margin-top: 25px">
+    {% for d in site.difficulty %}
+      {% if d.difficulty %}
+        <a href="{{ site.baseurl }}{{ d.url }}"class="btn btn-sm btn-default">{{ d.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <hr/>
+
+  {% if page.difficulty %}
+  <!-- Specific category -->
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      {% if post.difficulty == page.difficulty %}
+        <li>
+          {% if post.difficulty == "easy" %}
+          <span class="label label-success custom-badge">
+          {% elsif post.difficulty == "medium" %}
+          <span class="label label-warning custom-badge">
+          {% elsif post.difficulty == "hard" %}
+          <span class="label label-danger custom-badge">
+          {% endif %}
+            {{ post.difficulty }}
+          </span>
+          &nbsp;
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          &nbsp;
+          &raquo; <i><span>{{ post.date | date_to_string }}</span></i>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <hr />
+  <!-- End Specific category -->
+  {% else %}
+  <!-- Index page -->
+
+  {% endif %}
+</div>
+
+<!-- vnspoj.github.io_ads_post_upper_related -->
+<div style="margin-top: 50px; margin-bottom: 50px">
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-2949659900148168"
+      data-ad-slot="1965177778"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+</div>

@@ -1,8 +1,8 @@
 title: Hướng dẫn giải một số bài trên Code Learn
-description: Hướng dẫn giải một số bài trên Code Learn
+description: Hướng dẫn giải và phân loại một số bài trên hệ thống Code Learn
 author: "Code Learn Solution"
 github: //github.com/vnspoj/code-learn
-about: Hướng dẫn giải một số bài trên Code Learn
+about: Hướng dẫn giải và phân loại một số bài trên hệ thống Code Learn
 disqus_shortname: codelearnsolution
 # google_analytics: UA-XXXXXXXX-Y
 avatar_url: /static/img/favicon.png
@@ -27,18 +27,23 @@ share:
   # fb_appid: 1749788565247320
 
 urls:
-    - text: About Us
-      url: /about
-    - text: Related Topics
+    - text: Topics
       url: /category
     - text: Contests
       url: /contests
+    - text: Difficulty
+      url: /problems/difficulty
+    - text: About Us
+      url: /about
     - text: XML Feed
       url: /feed.xml
 
 collections:
-    contests:
-      output: true
+  contests:
+    output: true
+    sort_by: date
+  difficulty:
+    output: true
 
 url: "//vnspoj.github.io"
 baseurl: "/code-learn"
