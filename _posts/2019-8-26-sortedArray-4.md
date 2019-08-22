@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "sortedArray"
+categories: [sorting]
+code: 
+src: [cpp]
+difficulty: easy
+contestId: 131176
+---
+
+Trick đơn giản là sort lại mảng ban đầu, giả sử có thể trong tối đa 1 phép đổi biến mảng ban đầu thành mảng tăng dần thì số phần tử khác biệt của mảng ban đầu và mảng đã sort không quá `2`.
