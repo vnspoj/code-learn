@@ -33,6 +33,8 @@ urls:
       url: /contests
     - text: Difficulty
       url: /problems/difficulty
+    - text: Contribution
+      url: /contribution
     - text: About Us
       url: /about
     - text: XML Feed

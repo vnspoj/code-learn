@@ -115,9 +115,14 @@
         // if posts.title === undefined, so posts is many objects.
         if(posts.title === undefined) {
           matchingPosts = posts.filter(function (post) {
-              if ((post.title + '').toLowerCase().indexOf(currentInputValue) !== -1 || (post.description + '').toLowerCase().indexOf(currentInputValue) !== -1) {
-                  return true;
-              }
+            if ((post.title + '').toLowerCase().indexOf(currentInputValue) !== -1 ||
+                (post.code + '').toLowerCase().indexOf(currentInputValue) !== -1 ||
+                (post.link + '').toLowerCase().indexOf(currentInputValue) !== -1 ||
+                (post.difficulty + '').toLowerCase().indexOf(currentInputValue) !== -1 ||
+                (post.description + '').toLowerCase().indexOf(currentInputValue) !== -1
+            ) {
+              return true;
+            }
           });
         }else {
           matchingPosts = [posts]; // assign single object to Array
