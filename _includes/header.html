@@ -33,6 +33,9 @@
         {% if i.url == "/contests" or i.url == "/problems/difficulty" %}
           <span class="label label-danger custom-badge">New</span>
         {% endif %}
+        {% if i.url == "contribution" %}
+          <span class="label label-warning custom-badge">Read</span>
+        {% endif %}
       </a>
     </li>
     {% endfor %}

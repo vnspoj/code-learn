@@ -1,10 +1,8 @@
 # Code Learn Solution
 
-===========================
-
 Hướng dẫn giải một số bài trên hệ thống [Code Learn](https://codelearn.io/Training/)
 
-Trang web được host tại domain https://vnspoj.github.io/code-learn
+Trang web được host tại domain [https://vnspoj.github.io/code-learn](https://vnspoj.github.io/code-learn)
 
 <p align="center">
 <img src="./static/img/favicon.png" width="180px">
@@ -87,11 +85,11 @@ permalink: /category/binary-search
 Cách contribute cho project này:
 
 + Fork 2 repositories này về repository cá nhân:
-	+ https://github.com/vnspoj/code-learn
-	+ https://github.com/vnspoj/codelearn-solution
+	+ [https://github.com/vnspoj/code-learn](https://github.com/vnspoj/code-learn)
+	+ [https://github.com/vnspoj/codelearn-solution](https://github.com/vnspoj/codelearn-solution)
 
 + Clone 2 repository này về, tạo nhánh mới cho mỗi repo
 + Khi có bài viết mới cho một bài, tạo tutorial và solution như hướng dẫn ở trên, sau đó commit và push lên repo cá nhân
 + Tạo pull request đến repository gốc (repo này), chờ owner xét duyệt, merge về hoặc góp ý cải thiện bài viết.
 
-Lưu ý: khi viết tutorial, nên để lại tên tác giả viết bài đó để tiện theo dõi.
+**Lưu ý**: khi viết tutorial, nên để lại tên tác giả viết bài đó để tiện theo dõi.
