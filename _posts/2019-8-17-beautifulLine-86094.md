@@ -6,6 +6,7 @@ code: 86094
 src: [cpp]
 difficulty: hard
 contestId: 120342
+taskId: 86094
 ads_more: 1
 ---
 

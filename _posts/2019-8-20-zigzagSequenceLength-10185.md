@@ -6,6 +6,7 @@ code: 10185
 src: [cpp]
 difficulty: medium
 contestId: 114412
+taskId: 10681
 ads_more: 1
 ---
 

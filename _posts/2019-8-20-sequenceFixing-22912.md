@@ -6,6 +6,7 @@ code: 22912
 src: [java, py, js, cs, cpp]
 difficulty: medium
 contestId: 114412
+taskId: 114603
 ads_more: 1
 ---
 
