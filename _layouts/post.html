@@ -29,9 +29,21 @@ layout: default
   <h2 style="margin-bottom: 15px">Problem</h2>
   <h4>
     <i>Chi tiết bài:</i>
-    <a href="//codelearn.io/Training/Detail?Id={{ page.code }}" target="_blank">
-      {{ page.title }} (Id: {{ page.code }})
-    </a>
+    {% if page.noTrain %}
+      <a href="//codelearn.io/FightsTask/Index?Id={{ page.contestId }}&TaskId={{ page.taskId }}" target="_blank">
+        Xem trong contest
+      </a>
+    {% else %}
+        <a href="//codelearn.io/Training/Detail?Id={{ page.code }}" target="_blank">
+          {{ page.title }} (Id: {{ page.code }})
+        </a>
+        {% if page.taskId %}
+        |
+        <a href="//codelearn.io/FightsTask/Index?Id={{ page.contestId }}&TaskId={{ page.taskId }}" target="_blank">
+          Xem trong contest
+        </a>
+        {% endif %}
+    {% endif %}
   </h4>
   {% for contest in site.contests %}
   {% if contest.contestId and contest.contestId == page.contestId %}

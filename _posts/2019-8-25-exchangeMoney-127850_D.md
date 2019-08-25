@@ -6,6 +6,8 @@ code: 127850_D
 src: [cpp]
 difficulty: easy
 contestId: 127850
+taskId: 131330
+noTrain: 1
 ---
 
 Do chỉ có 1 lần exchange mua và bán, do đó vét chọn 2 ngày `i` và `j` để mua và bán vào 2 ngày đó.

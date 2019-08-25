@@ -6,6 +6,8 @@ code: 127850_C
 src: [cpp]
 difficulty: easy
 contestId: 127850
+taskId: 140899
+noTrain: 1
 ---
 
 
