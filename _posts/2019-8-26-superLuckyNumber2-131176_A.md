@@ -2,10 +2,12 @@
 layout: post
 title:  "superLuckyNumber2"
 categories: [greedy]
-code: 
+code: 131176_A
 src: [js]
 difficulty: medium
 contestId: 131176
+taskId: 129002
+noTrain: 1
 ---
 
 Gọi `n` là chiều dài của chuỗi ban đầu.
