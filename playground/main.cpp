@@ -14,55 +14,32 @@ typedef pair<int, int> ii;
 
 // #define debug 1
 
-int n, comp[55], visited[55];
-vi a, c;
-
-int minimalCost(std::vector<int> _c, std::vector<int> _a) {
-    n = sz(_c);
-    a.push_back(-1);
-    c.push_back(-1);
-    FOR(i, 1, n) {
-        a.push_back(_a[i - 1]);
-        c.push_back(_c[i - 1]);
-    }
-    int res = 0;
-    FOR(i, 1, n) {
-        if (!comp[i]) {
-            int u = i;
-            if (a[u] == u) {
-                comp[u] = ++comp[0];
-                res += c[u];
-                visited[u] = 1;
-            } else {
-                deque<int> st;
-                for (int v = u;; v = a[v]) {
-                    st.push_back(v);
-                    cout << v << " ";
-                    if (!visited[v]) {
-                        visited[v] = 1;
-                    } else {
-                        break;
-                    }
-                }
-                int v = st.back();
-                if (!comp[v]) {
-                    comp[v] = ++comp[0];
-                    int t = c[v];
-                    for (int k = a[v]; k != v; k = a[k]) t = min(t, c[k]);
-                    res += t;
-                }
-                for (int x : st) comp[x] = comp[v];
-            }
+int exchangeMoney(std::vector<int> a, int x) {
+    int n = a.size();
+    // vector<int> f(n, 0);
+    // f[0] = x;
+    int res = x;
+    FOR(i, 0, n - 2) {
+        // f[i] = f[i - 1];
+        // FOR(j, 0, i - 1) {
+        //     int num = f[j] / a[j];
+        //     int rem = f[j] % a[j];
+        //     f[i] = max(f[i], rem + num * a[i]);
+        // }
+        int num = x / a[i];
+        int rem = x % a[i];
+        FOR(j, i + 1, n - 1) {
+            res = max(res, rem + num * a[j]);
         }
     }
+    // return f[n - 1];
     return res;
 }
 
 #ifdef debug
 int main() {
 
-    cout << minimalCost(vi({1, 2, 3, 2, 10}), vi({1, 3, 4, 3, 3}));
-
+    cout << exchangeMoney(vi({978, 604, 888}), 385);
     EL;
     return 0;
 }
