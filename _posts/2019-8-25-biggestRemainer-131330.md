@@ -2,12 +2,12 @@
 layout: post
 title:  "biggestRemainer"
 categories: [greedy, sorting, array]
-code: 127850_C
+code: 131330
 src: [cpp]
 difficulty: easy
 contestId: 127850
 taskId: 140899
-noTrain: 1
+order: C
 ---
 
 
