@@ -30,4 +30,21 @@
 
   revealElementsOnScroll();
 
+  function isBaseUrl() {
+    return window.location.pathname == '/code-learn/' ||
+      window.location.pathname == '/code-learn';
+  }
+
+  function handleQuery() {
+    if (!isBaseUrl()) return;
+    const urlParams = new URLSearchParams(window.location.search);
+    const queryText = urlParams.get('q');
+    if (!queryText || queryText == '') return;
+    const searchInput = document.querySelector('#js-search__input');
+    searchInput.value = queryText;
+    searchInput.dispatchEvent(new Event('input'));
+  }
+
+  handleQuery();
+
 })();
