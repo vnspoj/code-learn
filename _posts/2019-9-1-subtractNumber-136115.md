@@ -12,3 +12,4 @@ noTrain: 1
 ---
 
 
+Giống tìm ước chung lớn nhất, do đó làm như đề là ok.
