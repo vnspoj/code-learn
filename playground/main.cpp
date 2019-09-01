@@ -14,32 +14,33 @@ typedef pair<int, int> ii;
 
 // #define debug 1
 
-int exchangeMoney(std::vector<int> a, int x) {
-    int n = a.size();
-    // vector<int> f(n, 0);
-    // f[0] = x;
-    int res = x;
-    FOR(i, 0, n - 2) {
-        // f[i] = f[i - 1];
-        // FOR(j, 0, i - 1) {
-        //     int num = f[j] / a[j];
-        //     int rem = f[j] % a[j];
-        //     f[i] = max(f[i], rem + num * a[i]);
-        // }
-        int num = x / a[i];
-        int rem = x % a[i];
-        FOR(j, i + 1, n - 1) {
-            res = max(res, rem + num * a[j]);
+int minMove(int n) {
+    if (n == 1)
+        return 0;
+    int res = n - 1;
+    for (int i = 2; i < n - 1; i++) {
+        int ans = 0;
+        int a = n, b = i;
+        for (;;) {
+            if (a == 1 && b == 1)
+                break;
+            ans++;
+            if (ans >= res)
+                break;
+            a -= b;
+            if (a < b)
+                swap(a, b);
         }
+        res = min(res, ans);
     }
-    // return f[n - 1];
     return res;
 }
 
 #ifdef debug
 int main() {
 
-    cout << exchangeMoney(vi({978, 604, 888}), 385);
+    cout << minMove(3);
+
     EL;
     return 0;
 }
