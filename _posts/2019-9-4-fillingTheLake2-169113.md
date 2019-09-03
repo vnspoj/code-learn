@@ -24,4 +24,4 @@ Do đó số ước là `(3p1+1) * (3p2+1) * ... * (3pn+1)`
 
 Do đó phân tích `N` ra thừa số nguyên tố để tính các giá trị `pi`, từ đó dễ dàng có được số ước cần tìm.
 
-Tham khảo bài dễ hơn: [fillingTheLake2](https://vnspoj.github.io/code-learn/?q=fillingTheLake2)
+Tham khảo bài dễ hơn: [fillingTheLake1](https://vnspoj.github.io/code-learn/?q=fillingTheLake1)
