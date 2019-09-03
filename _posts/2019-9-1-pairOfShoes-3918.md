@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "pairOfShoes"
-categories: [sortings]
+categories: [sorting]
 code: 3918
 src: [cpp]
 difficulty: easy

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "linearTimeSort"
-categories: [sortings, hash-table]
+categories: [sorting, hash-table]
 code: 33090
 src: [cpp]
 difficulty: easy
