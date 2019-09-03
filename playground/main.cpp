@@ -12,34 +12,49 @@ typedef pair<int, int> ii;
 #define FOD(i, r, l) for (int i = r; i >= l; i--)
 #define faster ios_base::sync_with_stdio(false) && cin.tie(NULL)
 
-// #define debug 1
+#define debug 1
 
-int minMove(int n) {
-    if (n == 1)
-        return 0;
-    int res = n - 1;
-    for (int i = 2; i < n - 1; i++) {
-        int ans = 0;
-        int a = n, b = i;
-        for (;;) {
-            if (a == 1 && b == 1)
+int n, k;
+vector<string> res;
+
+int check(string s) {
+    int res = 0;
+    for (int i = 0; i < int(s.size()) - k + 1; i++) {
+        int ok = true;
+        for (int j = i; j <= i + k - 1; j++) {
+            if (s[j] == 'B') {
+                ok = false;
                 break;
-            ans++;
-            if (ans >= res)
-                break;
-            a -= b;
-            if (a < b)
-                swap(a, b);
+            }
         }
-        res = min(res, ans);
+        res += ok;
     }
+    return res;
+}
+
+void solve(string s) {
+    if (check(s) > 1)
+        return;
+    if (s.size() == n) {
+        if (check(s) == 1)
+            res.push_back(s);
+        return;
+    }
+    solve(s + "A");
+    solve(s + "B");
+}
+
+std::vector<std::string> stringAB(int _n, int _k) {
+    n = _n;
+    k = _k;
+    solve("");
     return res;
 }
 
 #ifdef debug
 int main() {
 
-    cout << minMove(3);
+    stringAB(3, 2);
 
     EL;
     return 0;
