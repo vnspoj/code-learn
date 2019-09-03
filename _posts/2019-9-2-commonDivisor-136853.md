@@ -2,13 +2,12 @@
 layout: post
 title:  "commonDivisor"
 categories: [brute-force, string, number-theory]
-code: 137576
+code: 136853
 src: [cpp]
 difficulty: medium
 contestId: 139256
 taskId: 136853
 order: B
-noTrain: 1
 ---
 
 Gọi 2 chuỗi đề cho là `a` và `b`. Không mất tổng quát, giả sử `len(a) > len(b)`.

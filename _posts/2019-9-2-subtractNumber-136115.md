@@ -8,7 +8,6 @@ difficulty: easy
 contestId: 139256
 taskId: 136115
 order: D
-noTrain: 1
 ---
 
 

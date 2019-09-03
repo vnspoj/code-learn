@@ -8,7 +8,6 @@ difficulty: easy
 contestId: 139256
 taskId: 143975
 order: J
-noTrain: 1
 ---
 
 Gọi `f[i]` là tổng kết quả với các chuỗi con tận cùng là `i`. Kết quả là `sum(f[i])`
