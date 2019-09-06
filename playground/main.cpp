@@ -14,47 +14,33 @@ typedef pair<int, int> ii;
 
 #define debug 1
 
-int n, k;
-vector<string> res;
-
-int check(string s) {
-    int res = 0;
-    for (int i = 0; i < int(s.size()) - k + 1; i++) {
-        int ok = true;
-        for (int j = i; j <= i + k - 1; j++) {
-            if (s[j] == 'B') {
-                ok = false;
-                break;
-            }
-        }
-        res += ok;
+int distributeCandy(std::vector<int> a) {
+    int n = a.size();
+    if (n == 1)
+        return 1;
+    int cur = 0;
+    for (int i = 1; i < n; i++) {
+        if (a[i] < a[cur])
+            cur = i;
     }
-    return res;
-}
-
-void solve(string s) {
-    if (check(s) > 1)
-        return;
-    if (s.size() == n) {
-        if (check(s) == 1)
-            res.push_back(s);
-        return;
+    int res = 1;
+    for (int j = cur + 1, t = 1; j < n; j++) {
+        if (a[j] > a[j - 1])
+            res += ++t;
+        else
+            res += (t = 1);
     }
-    solve(s + "A");
-    solve(s + "B");
-}
-
-std::vector<std::string> stringAB(int _n, int _k) {
-    n = _n;
-    k = _k;
-    solve("");
+    for (int j = cur - 1, t = 1; j >= 0; j--) {
+        if (a[j] > a[j + 1])
+            res += ++t;
+        else
+            res += (t = 1);
+    }
     return res;
 }
 
 #ifdef debug
 int main() {
-
-    stringAB(3, 2);
 
     EL;
     return 0;
