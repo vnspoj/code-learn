@@ -8,6 +8,7 @@ difficulty: easy
 contestId: 137518
 taskId: 159729
 order: A
+noTrain: 1
 ---
 
 ***Author: @speechlessz***
