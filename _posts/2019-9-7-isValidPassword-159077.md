@@ -3,7 +3,7 @@ layout: post
 title:  "isValidPassword"
 categories: [brute-force, implementation]
 code: 159077
-src: [cpp]
+src: [js]
 difficulty: easy
 contestId: 137518
 taskId: 159077
