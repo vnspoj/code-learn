@@ -3,8 +3,8 @@ description: Hướng dẫn giải và phân loại một số bài trên hệ t
 author: "Code Learn Solution"
 github: //github.com/vnspoj/code-learn
 about: Hướng dẫn giải và phân loại một số bài trên hệ thống Code Learn
-disqus_shortname: codelearnsolution
-# google_analytics: UA-XXXXXXXX-Y
+# disqus_shortname: codelearnsolution
+google_analytics: UA-158907960-1
 avatar_url: /static/img/favicon.png
 email: tutorialspoj@gmail.com
 
