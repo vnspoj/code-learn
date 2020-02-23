@@ -354,7 +354,7 @@ div.btn-share {
         margin-right: 10px;
     }
     .fb-share-button {
-        margin-left: 10px;
+        // margin-left: 10px;
     }
 }
 
@@ -492,4 +492,9 @@ input#js-search__input {
 			width: auto !important;
 		}
 	}
+}
+
+.block-15 {
+	display: block;
+	height: 15px;
 }
