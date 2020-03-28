@@ -5,7 +5,7 @@ categories: [math, number-theory, greedy]
 code: 29051
 src: [cpp]
 difficulty: medium
-ads_more: 3
+
 ---
 
 Nhắc lai phép `XOR` (thường được ký hiệu là `|`, hay ký hiệu `^` trong C++)

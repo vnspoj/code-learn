@@ -7,7 +7,7 @@ src: [cpp]
 difficulty: medium
 contestId: 114412
 taskId: 10681
-ads_more: 1
+
 ---
 
 Bài quy hoạch động khá đơn giản, gọi `f[i][0]` là chiều dài dãy con zigzag dài nhất tận cùng là `i` và lên tại `i` (tức `a[i-2] > a[i-1] < a[i]`, hình thành chữ `V`). Tương tự `f[i][1]` là chiều dài dãy con zigzag dài nhất tận cùng là `i` và xuống tại `i` (hình thành dấu `^`).

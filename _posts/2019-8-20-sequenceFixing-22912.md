@@ -7,7 +7,7 @@ src: [java, py, js, cs, cpp]
 difficulty: medium
 contestId: 114412
 taskId: 114603
-ads_more: 1
+
 ---
 
 Duy trì 1 stack chứa các ngoặc mở hiện tại, khi duyệt đến ngoặc đóng thì pop ra khỏi stack, còn nếu không còn thì phải xóa. Đến khi tất cả đã được duyệt, lượng ngoặc mở còn tồn trên stack cần phải xóa hết.

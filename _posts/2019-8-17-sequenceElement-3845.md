@@ -5,7 +5,7 @@ categories: [dp, matrix]
 code: 3845
 src: [cpp]
 difficulty: medium
-ads_more: 2
+
 ---
 
 Bài này mình không biết có ẩn ý hay cách giải khác nào đặc biệt không, tuy nhiên nó chỉ là bài quy hoạch động tương tự như bài Fibonacci khi `n` lớn (thay vì tính từ 2 phần tử trước và mod cho số nguyên tố nào đó, bài này là tính từ 5 số trước và mod cho `10`). Do đó hoàn toàn có thể áp dụng cách làm cho Fibonacci khi `n` lớn.

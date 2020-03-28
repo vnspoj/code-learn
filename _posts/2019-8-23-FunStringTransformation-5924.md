@@ -5,7 +5,7 @@ categories: [greedy, string]
 code: 5924
 src: [cpp]
 difficulty: hard
-ads_more: 1
+
 ---
 
 ### Nhận xét

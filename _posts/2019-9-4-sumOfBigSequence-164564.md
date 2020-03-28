@@ -5,7 +5,7 @@ categories: [math, number-theory]
 code: 164564
 src: [cpp, py, java]
 difficulty: hard
-ads_more: 3
+
 ---
 
 Bài này mình ra :))

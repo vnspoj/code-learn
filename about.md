@@ -2,7 +2,6 @@
 layout: page
 title: About Us
 permalink: /about
-ads: 0
 ---
 
 # Code Learn Solution
@@ -20,16 +19,6 @@ Trang web được host tại domain [https://vnspoj.github.io/code-learn](https
 + Phân loại giải thuật cho mỗi bài.
 + Hướng dẫn lời giải, đánh giá độ phức tạp.
 + Mã nguồn cho lời giải, sử dụng bằng 1 hoặc nhiều ngôn ngữ lập trình.
-
-<!-- vnspoj.github.io_ads_post_upper_related -->
-<div style="margin-top: 50px; margin-bottom: 30px">
-<ins class="adsbygoogle"
-	style="display:block"
-	data-ad-client="ca-pub-2949659900148168"
-	data-ad-slot="1965177778"
-	data-ad-format="auto"
-	data-full-width-responsive="true"></ins>
-</div>
 
 ## Operation
 
@@ -95,16 +84,6 @@ permalink: /category/binary-search
 ```
 
 + Thư mục `_contests` chứa các contest của Code Learn, cũng có format tương tự như `_posts`, và mỗi contest có id trên Code Learn. Mỗi post nếu có `contestId` thì giá trị này được map đến id trong thư mục `_contests`.
-
-<!-- vnspoj.github.io_ads_post_upper_related -->
-<div style="margin-top: 50px; margin-bottom: 30px">
-<ins class="adsbygoogle"
-	style="display:block"
-	data-ad-client="ca-pub-2949659900148168"
-	data-ad-slot="1965177778"
-	data-ad-format="auto"
-	data-full-width-responsive="true"></ins>
-</div>
 
 ## Contributions
 

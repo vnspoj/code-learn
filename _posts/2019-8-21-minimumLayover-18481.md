@@ -5,7 +5,7 @@ categories: [greedy, matching, combinatorics, backtracking, sorting]
 code: 18481
 src: [cpp]
 difficulty: hard
-ads_more: 3
+
 ---
 
 

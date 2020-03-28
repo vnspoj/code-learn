@@ -5,7 +5,7 @@ categories: [number-theory, math]
 code: 169113
 src: [cpp]
 difficulty: medium
-ads_more: 1
+
 ---
 
 Bài này mình ra :))
